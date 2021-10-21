@@ -1,0 +1,9 @@
+.MusicContainerTop-100 {
+    width: calc(100% - 250px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+}

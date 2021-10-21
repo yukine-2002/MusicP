@@ -1,38 +1,154 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+.checkContent .content {
+  margin-left: 60px;
+}
+.row , .listPlay {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+.listPlay{
+  max-height: 500px;
+    overflow: auto;
+}
+.c-player {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: #ffffff;
+  display: block;
+  margin: 0px auto;
+  /* padding: 10px; */
+  border-radius: 16px;
+  box-shadow: inset -6px -6px 12px rgb(211 211 211 / 80%),
+    inset 6px 6px 12px rgb(255 255 255 / 40%);
+}
+.padding-footer {
+  padding: 120px;
+}
+.c-player .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-player > h4 {
+  color: rgb(8, 5, 5);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.c-player > p {
+  color: rgb(14, 10, 10);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.c-player > p span {
+  font-weight: 400;
+}
+.c-player--details {
+  margin: 0 100px;
+}
+.c-player--details .details-img {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.c-player--details .details-img img {
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 50px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8),
+    -6px -6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.c-player--details .details-img:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  border-radius: 50%;
+  border: 3px dashed rgba(255, 206, 0, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+    -2px -2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.c-player--details .details-title {
+  color: rgb(14, 11, 11);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.c-player--details .details-artist {
+  color: #aaa;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+    -2px -2px 4px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.c-player--controls {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.c-player--controls .play-btn {
+  display: flex;
+  margin: 0 24px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 80%),
+    -4px -4px 10px rgb(255 255 255 / 40%), inset -4px -4px 10px rgb(0 0 0 / 40%),
+    inset 4px 4px 10px rgb(255 255 255 / 40%);
+  border: none;
+  outline: none;
+  background-color: #ffce00;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.c-player--controls .skip-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1000px) {
+  .BgPlayMusicLeft {
+      width: 100%;
+      display: flex;
   }
-  to {
-    transform: rotate(360deg);
+  .BgPlayMusicLeft .img img {
+      max-width: 250px;
+      object-fit: cover;
+  }
+  .ListMusicRight {
+      margin: 0;
   }
 }

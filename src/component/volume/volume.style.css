@@ -1,0 +1,11 @@
+.volume-off,.volume-on,.random{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.color {
+    color: cornflowerblue;
+}
