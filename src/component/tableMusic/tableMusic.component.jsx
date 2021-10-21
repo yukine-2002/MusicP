@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import { addMusic,addListLoves,addPlayList } from "../../redux/Music/music.action";
+import { addMusic,addListLoves } from "../../redux/Music/music.action";
 import {connect} from 'react-redux';
 
-const TableMusic = ({ songs,addMusic,addListLoves,addPlayList }) => {
+const TableMusic = ({ songs,addMusic,addListLoves}) => {
 
   const audioRef = useRef();
   const [percentage, setPercentage] = useState(0);

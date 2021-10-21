@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "./listenMucsic.style.css";
 import { connect } from "react-redux";
 import TableMusic from "../../component/tableMusic/tableMusic.component";
@@ -18,7 +18,7 @@ const ListenPage = ({
 
   const handleClick = async (id) => {
     addListPlay([id, songs]);
-    
+
      addPlayListToItem(currentUser.id, playList);
   };
 

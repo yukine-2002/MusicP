@@ -1,4 +1,4 @@
-import MUSIC_DATA from "../../Page/dataMusic";
+
 import { dataActionType } from "./data.type";
 
 const INITIAL_STATE = {

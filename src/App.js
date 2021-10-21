@@ -10,7 +10,7 @@ import RunMusic from "./component/runMusic/runMusic.component";
 import LovePage from "./Page/lovePage/lovePage.component";
 import Login from "./Page/loginPage/login.component";
 import {setCurrentUser} from './redux/user/user.action';
-import { auth, createUserProfileDocument,addPlayListToItem,convertItem } from './firebase/firebase.util';
+import { auth, createUserProfileDocument} from './firebase/firebase.util';
 import UserPage from "./Page/pageUser/pageUser.component";
 import {getPlayList} from "./redux/Music/music.action";
 

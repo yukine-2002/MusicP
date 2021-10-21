@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import BoxMusic from "../../component/box-music/box-music.conponent";
 import "./TopMusic.style.css";
-import MUSIC_DATA from "../dataMusic";
 import { connect } from "react-redux";
 import { getData } from "../../redux/data/data.action";
 import {

@@ -56,3 +56,7 @@
   left: 0;
   padding: 2px;
 }
+strong {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
